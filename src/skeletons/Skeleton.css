@@ -1,0 +1,115 @@
+/* basic styles */
+
+.skeleton {
+    background : #ddd;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.skeleton.text{
+    width: 100%;
+    height: 12px;
+    /* represends a line of text */
+}
+
+.skeleton.title { 
+    width: 50%;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.skeleton.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.skeleton.thumbnail{
+    width:100px;
+    height:100px;
+}
+
+/* avatar is the circle image */
+/* mit border-radius 50% it becomes from square to a circle */
+/* skeleton.thumbnail is gonna be a square */
+
+.skeleton-wrapper { 
+    margin: 20px auto;
+    padding: 10px 15px;
+    border-radius:4px;
+    position:relative;
+}
+
+/* skeleton-profile for the USER */
+
+.skeleton-profile{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:30px;
+    align-items: center;
+}
+
+/* skeleton-profile the one div is gonna go to the left and the other one is gonna go to the right */
+
+
+/*  THEMES  */
+
+
+.skeleton-wrapper.light {
+    background: #f2f2f2;
+}
+
+
+.skeleton-wrapper.dark {
+    background: #444;
+}
+
+.skeleton-wrapper.dark .skeleton {
+    background: #777;
+}
+
+
+/*  Animation Effects */
+
+
+.shimmer-wrapper{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%; 
+    height:100%;
+    overflow:hidden;
+
+}
+
+/* which means, its being positioned absolute to the relative parent, the parent
+is in this case the skeleton-wrapper which is the component itself, so thats why when
+i say width:100% and height:100% it takes the full width and full height of the
+component, in this case of each skeleton. top:0; and left:0; means 
+that its gonna start up and left */
+
+
+.shimmer{
+    width:50%;
+    height:100%;
+    background: rgba(255,255,255,.2);
+    animation-name: loading;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    box-shadow: 0 0 30px rgba(255,255,255,0.05)
+}
+
+/* background slightly transparent */
+
+
+@keyframes loading{
+    0%{transform:translate(-500px) skew(-20deg)}
+    100%{transform:translate(700px) skew(-20deg)}
+}
+
+
+.dark .shimmer { 
+    background: rgba(255,255,255,0.05)
+}
