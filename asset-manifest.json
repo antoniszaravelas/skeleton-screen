@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/skeleton-screen/static/css/main.2ad94cb2.chunk.css",
+    "main.js": "/skeleton-screen/static/js/main.44986b8c.chunk.js",
+    "main.js.map": "/skeleton-screen/static/js/main.44986b8c.chunk.js.map",
+    "runtime-main.js": "/skeleton-screen/static/js/runtime-main.96038b1a.js",
+    "runtime-main.js.map": "/skeleton-screen/static/js/runtime-main.96038b1a.js.map",
+    "static/js/2.4ed2e91f.chunk.js": "/skeleton-screen/static/js/2.4ed2e91f.chunk.js",
+    "static/js/2.4ed2e91f.chunk.js.map": "/skeleton-screen/static/js/2.4ed2e91f.chunk.js.map",
+    "index.html": "/skeleton-screen/index.html",
+    "static/css/main.2ad94cb2.chunk.css.map": "/skeleton-screen/static/css/main.2ad94cb2.chunk.css.map",
+    "static/js/2.4ed2e91f.chunk.js.LICENSE.txt": "/skeleton-screen/static/js/2.4ed2e91f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96038b1a.js",
+    "static/js/2.4ed2e91f.chunk.js",
+    "static/css/main.2ad94cb2.chunk.css",
+    "static/js/main.44986b8c.chunk.js"
+  ]
+}
